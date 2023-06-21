@@ -1,5 +1,5 @@
 import { HStack, Image } from "@chakra-ui/react";
-import ColorModeSwitch from "./ColorModeSwitch";
+import { ColorModeSwitch } from "./";
 
 const NavBar = () => {
 	return (
