@@ -7,7 +7,7 @@ const NavBar = () => {
 			<Image
 				src={"hub.webp"}
 				boxSize={20}
-				padding={3}
+				padding={2}
 				borderRadius={50}
 			/>
 			<ColorModeSwitch />
