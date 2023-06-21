@@ -3,7 +3,7 @@ import { GameCard, GameCardContainer, GameCardSkeleton } from "./";
 import useGames from "../hooks/useGames";
 
 const GameGrid = () => {
-	const { games, error, isLoading } = useGames();
+	const { data: games, error, isLoading } = useGames();
 	console.log("isLoading: ", isLoading);
 	const skeletons = [1, 2, 3, 4, 5, 6];
 
