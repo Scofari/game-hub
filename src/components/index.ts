@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import GameCard from "./GameCard";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
+import GameCardSkeleton from "./GameCardSkeleton";
 
 export {
 	ColorModeSwitch,
@@ -12,4 +13,5 @@ export {
 	GameCard,
 	PlatformIconList,
 	CriticScore,
+	GameCardSkeleton,
 };

@@ -17,7 +17,7 @@ const GameCard = ({ game }: Props) => {
 	const platforms = parentPlatforms.map((p) => p.platform);
 
 	return (
-		<Card borderRadius={10} overflow={"hidden"}>
+		<Card width={"300px"} borderRadius={10} overflow={"hidden"}>
 			<Image src={getCroppedImageUrl(image)} />
 			<CardBody>
 				<Heading fontSize={"2xl"}>{name}</Heading>
