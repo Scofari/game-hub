@@ -17,7 +17,7 @@ const GameCard = ({ game }: Props) => {
 	const platforms = parentPlatforms.map((p) => p.platform);
 
 	return (
-		<Card width={"300px"} borderRadius={10} overflow={"hidden"}>
+		<Card>
 			<Image src={getCroppedImageUrl(image)} />
 			<CardBody>
 				<Heading fontSize={"2xl"}>{name}</Heading>
