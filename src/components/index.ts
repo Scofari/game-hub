@@ -8,6 +8,7 @@ import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
 import GenreList from "./GenreList";
 import PlatformSelector from "./PlatformSelector";
+import SortSelector from "./SortSelector";
 
 export {
 	ColorModeSwitch,
@@ -16,6 +17,7 @@ export {
 	GameCard,
 	PlatformIconList,
 	PlatformSelector,
+	SortSelector,
 	CriticScore,
 	GameCardSkeleton,
 	GameCardContainer,
