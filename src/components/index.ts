@@ -11,6 +11,7 @@ import PlatformIconList from "./PlatformIconList";
 import PlatformSelector from "./PlatformSelector";
 import SearchInput from "./SearchInput";
 import SortSelector from "./SortSelector";
+import Emoji from "./Emoji";
 
 export {
 	ColorModeSwitch,
@@ -26,4 +27,5 @@ export {
 	PlatformSelector,
 	SearchInput,
 	SortSelector,
+	Emoji,
 };

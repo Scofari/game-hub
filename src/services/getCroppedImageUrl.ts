@@ -1,5 +1,6 @@
 const getCroppedImageUrl = (url: string) => {
-	if (!url) return "no-img-placeholder.webp";
+	const noImg = "no-img-placeholder.webp";
+	if (!url) return noImg;
 
 	const target = "media/";
 	const cropParams = "crop/600/400/";
