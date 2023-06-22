@@ -6,6 +6,7 @@ const NavBar = () => {
 		<HStack justifyContent="space-between" padding={3}>
 			<Image
 				src={"hub.webp"}
+				alt={"logo"}
 				boxSize={20}
 				padding={2}
 				borderRadius={50}
