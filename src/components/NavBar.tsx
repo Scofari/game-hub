@@ -1,16 +1,18 @@
 import { HStack, Image } from "@chakra-ui/react";
-import { ColorModeSwitch } from "./";
+import logo from "../../public/unity-seeklogo.com.svg";
+import { ColorModeSwitch, SearchInput } from "./";
 
 const NavBar = () => {
 	return (
 		<HStack justifyContent="space-between" padding={3}>
 			<Image
-				src={"hub.webp"}
+				src={logo}
 				alt={"logo"}
 				boxSize={20}
-				padding={2}
+				padding={3}
 				borderRadius={50}
 			/>
+			<SearchInput />
 			<ColorModeSwitch />
 		</HStack>
 	);

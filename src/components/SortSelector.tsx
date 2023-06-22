@@ -1,4 +1,4 @@
-import { Menu, MenuButton, Button, MenuList, MenuItem } from "@chakra-ui/react";
+import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
 
 interface Props {
@@ -19,7 +19,6 @@ const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
 	const currentSortOrder = sortOrders.find(
 		(order) => order.value === sortOrder
 	);
-	console.log("currentSortOrder: ", currentSortOrder);
 
 	return (
 		<Menu>
