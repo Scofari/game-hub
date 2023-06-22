@@ -3,7 +3,12 @@ import { Game } from "../types/game.interface";
 import useData from "./useData";
 
 const useGames = (gameQuery: GameQuery) => {
-	const { genre, platform, sortOrder: ordering } = gameQuery;
+	const {
+		genre,
+		platform,
+		sortOrder: ordering,
+		searchText: search,
+	} = gameQuery;
 
 	return useData<Game>(
 		"/games",
@@ -12,6 +17,7 @@ const useGames = (gameQuery: GameQuery) => {
 				genres: genre?.id,
 				platforms: platform?.id,
 				ordering,
+				search,
 			},
 		},
 		[gameQuery]

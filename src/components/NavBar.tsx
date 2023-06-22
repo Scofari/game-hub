@@ -2,7 +2,11 @@ import { HStack, Image } from "@chakra-ui/react";
 import logo from "../../public/unity-seeklogo.com.svg";
 import { ColorModeSwitch, SearchInput } from "./";
 
-const NavBar = () => {
+interface Props {
+	onSearch: (searchTerm: string) => void;
+}
+
+const NavBar = ({ onSearch }: Props) => {
 	return (
 		<HStack justifyContent="space-between" padding={3}>
 			<Image
@@ -12,7 +16,7 @@ const NavBar = () => {
 				padding={3}
 				borderRadius={50}
 			/>
-			<SearchInput />
+			<SearchInput onSearch={onSearch} />
 			<ColorModeSwitch />
 		</HStack>
 	);
