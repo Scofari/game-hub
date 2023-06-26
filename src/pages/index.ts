@@ -1,6 +1,6 @@
 import HomePage from "./HomePage";
 import Layout from "./Layout";
-import GameDetail from "./GameDetail";
+import GameDetailPage from "./GameDetailPage";
 import ErrorPage from "./ErrorPage";
 
-export { HomePage, Layout, GameDetail, ErrorPage };
+export { HomePage, Layout, GameDetailPage, ErrorPage };
