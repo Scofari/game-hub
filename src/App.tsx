@@ -12,7 +12,7 @@ import { GameQuery } from "./types/game-query.interface";
 
 function App() {
 	const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
-	const { genre, platform, sortOrder } = gameQuery;
+	const { genreId, platformId, sortOrder } = gameQuery;
 
 	return (
 		<Grid
@@ -35,9 +35,9 @@ function App() {
 			<Show above="lg">
 				<GridItem area={"aside"} paddingX={5}>
 					<GenreList
-						selectedGenre={genre}
+						selectedGenreId={genreId}
 						onSelectGenre={(genre) =>
-							setGameQuery({ ...gameQuery, genre })
+							setGameQuery({ ...gameQuery, genreId: genre.id })
 						}
 					/>
 				</GridItem>
@@ -47,9 +47,12 @@ function App() {
 					<GameHeading gameQuery={gameQuery} />
 					<Flex gap={5} marginBottom={5}>
 						<PlatformSelector
-							selectedPlatform={platform}
+							selectedPlatformId={platformId}
 							onSelectPlatform={(platform) =>
-								setGameQuery({ ...gameQuery, platform })
+								setGameQuery({
+									...gameQuery,
+									platformId: platform.id,
+								})
 							}
 						/>
 						<SortSelector

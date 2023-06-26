@@ -23,10 +23,9 @@ const GameGrid = ({ gameQuery }: Props) => {
 	if (error) return <Text>{error.message}</Text>;
 
 	const fetchedGamesCount =
-		games?.pages.reduce(
-			(total, page) => (total += page.results.length),
-			0
-		) || 0;
+		games?.pages.reduce((total, page) => {
+			return (total += page.results.length);
+		}, 0) || 0;
 
 	return (
 		<InfiniteScroll

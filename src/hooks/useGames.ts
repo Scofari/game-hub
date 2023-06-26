@@ -8,8 +8,8 @@ const apiClient = new APIClient<Game>("/games");
 
 const useGames = (gameQuery: GameQuery) => {
 	const {
-		genre,
-		platform,
+		genreId,
+		platformId,
 		sortOrder: ordering,
 		searchText: search,
 	} = gameQuery;
@@ -19,8 +19,8 @@ const useGames = (gameQuery: GameQuery) => {
 		queryFn: ({ pageParam = 1 }) =>
 			apiClient.getAll({
 				params: {
-					genres: genre?.id,
-					parent_platforms: platform?.id,
+					genres: genreId,
+					parent_platforms: platformId,
 					ordering,
 					search,
 					page: pageParam,
@@ -28,9 +28,6 @@ const useGames = (gameQuery: GameQuery) => {
 			}),
 		staleTime: 24 * 60 * 60 * 1000, //24h
 		getNextPageParam: (lastPage, allPages) => {
-			console.log("allPages: ", allPages);
-			console.log("lastPage: ", lastPage);
-
 			return lastPage.next ? allPages.length + 1 : undefined;
 		},
 	});

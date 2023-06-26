@@ -13,11 +13,12 @@ import { Genre } from "../types/genre.interface";
 
 interface Props {
 	onSelectGenre: (genre: Genre) => void;
-	selectedGenre: Genre | null;
+	selectedGenreId?: number;
 }
 
-const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
+const GenreList = ({ selectedGenreId, onSelectGenre }: Props) => {
 	const { data: genres, isLoading, error } = useGenres();
+	console.log("selectedGenreId: ", selectedGenreId);
 
 	if (error) return null;
 
@@ -48,7 +49,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
 									fontSize={"lg"}
 									variant={"link"}
 									fontWeight={
-										id === selectedGenre?.id
+										id === selectedGenreId
 											? "bold"
 											: "normal"
 									}
