@@ -29,7 +29,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
 				Genres
 			</Heading>
 			<List>
-				{genres.map((genre) => {
+				{genres.results.map((genre) => {
 					const { id, image_background: image, name } = genre;
 					return (
 						<ListItem key={id} paddingY={"5px"}>
