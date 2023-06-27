@@ -13,7 +13,6 @@ const GameCardContainer = ({ children }: Props) => {
 				transform: "scale(1.03)",
 				transition: "transform .15s ease-in",
 			}}
-			cursor="pointer"
 		>
 			{children}
 		</Box>
