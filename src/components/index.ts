@@ -15,6 +15,7 @@ import Emoji from "./Emoji";
 import ExpandableText from "./ExpandableText";
 import DefinitionItem from "./DefinitionItem";
 import GameAttributes from "./GameAttributes";
+import GameTrailer from "./GameTrailer";
 
 export {
 	ColorModeSwitch,
@@ -34,4 +35,5 @@ export {
 	ExpandableText,
 	DefinitionItem,
 	GameAttributes,
+	GameTrailer,
 };
