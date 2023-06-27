@@ -2,7 +2,7 @@ import { HStack, Image } from "@chakra-ui/react";
 import { ColorModeSwitch, SearchInput } from "./";
 
 const NavBar = () => {
-	const logo = "logo.svg";
+	const logo = "/logo.svg";
 
 	return (
 		<HStack justifyContent="space-between" padding={3}>

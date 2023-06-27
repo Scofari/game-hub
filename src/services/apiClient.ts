@@ -27,7 +27,7 @@ class APIClient<T> {
 
 	get = (id: number | string) =>
 		axiosInstance
-			.get<T>(this.endpoint, { params: { id } })
+			.get<T>(`${this.endpoint}/${id}`)
 			.then((response) => response.data);
 }
 

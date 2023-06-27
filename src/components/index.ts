@@ -12,6 +12,7 @@ import PlatformSelector from "./PlatformSelector";
 import SearchInput from "./SearchInput";
 import SortSelector from "./SortSelector";
 import Emoji from "./Emoji";
+import ExpandableText from "./ExpandableText";
 
 export {
 	ColorModeSwitch,
@@ -28,4 +29,5 @@ export {
 	SearchInput,
 	SortSelector,
 	Emoji,
+	ExpandableText,
 };

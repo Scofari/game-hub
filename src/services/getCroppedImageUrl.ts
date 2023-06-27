@@ -1,5 +1,5 @@
 const getCroppedImageUrl = (url: string): string => {
-	const noImg = "no-img.webp";
+	const noImg = "/no-img.webp";
 	if (!url) return noImg;
 
 	const target = "media/";
