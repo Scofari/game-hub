@@ -6,9 +6,10 @@ interface Props {
 
 const Emoji = ({ rating }: Props) => {
 	if (rating < 3) return null;
-	const meh = "meh.png";
-	const thumbsUp = "thumbs-up.png";
-	const bullsEye = "bulls-eye.png";
+
+	const meh = "/meh.png";
+	const thumbsUp = "/thumbs-up.png";
+	const bullsEye = "/bulls-eye.png";
 
 	const emojiMap: { [key: number]: ImageProps } = {
 		3: { src: meh, alt: "meh" },

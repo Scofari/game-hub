@@ -13,6 +13,8 @@ import SearchInput from "./SearchInput";
 import SortSelector from "./SortSelector";
 import Emoji from "./Emoji";
 import ExpandableText from "./ExpandableText";
+import DefinitionItem from "./DefinitionItem";
+import GameAttributes from "./GameAttributes";
 
 export {
 	ColorModeSwitch,
@@ -30,4 +32,6 @@ export {
 	SortSelector,
 	Emoji,
 	ExpandableText,
+	DefinitionItem,
+	GameAttributes,
 };
